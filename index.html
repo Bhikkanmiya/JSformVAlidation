@@ -1,0 +1,122 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Validation</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <script defer src="./index.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="imgBx">
+        <img src="./Assets/Web – Graphic.png" />
+      </div>
+      <div class="mainDiv">
+        <form id="form" action="/">
+          <h1>Create an account</h1>
+          <div class="mainInput">
+            <div class="input-control">
+              <label for="firstname">First Name</label>
+              <input
+                id="firstname"
+                name="firstname"
+                type="text"
+                placeholder="First Name"
+              />
+              <div class="error"></div>
+            </div>
+
+            <div class="input-control">
+              <label for="lastname">Last Name</label>
+              <input
+                id="lastname"
+                name="lastname"
+                type="text"
+                placeholder="Last Name"
+              />
+              <div class="error"></div>
+            </div>
+            <div class="input-control">
+              <label for="age">Age</label>
+              <input id="age" name="age" type="text" placeholder="18-100" />
+              <div class="error"></div>
+            </div>
+          </div>
+
+          <div class="secoundDiv">
+            <div class="input-control">
+              <label for="mobile">Mobile</label>
+              <input
+                id="mobile"
+                name="mobile"
+                type="text"
+                placeholder="xxxxx xxxxx"
+              />
+              <div class="error"></div>
+            </div>
+            <div class="input-control">
+              <label for="email">Email</label>
+              <input
+                id="email"
+                name="email"
+                type="text"
+                placeholder="abc@xxx.zzz"
+              />
+              <div class="error"></div>
+            </div>
+          </div>
+
+          <div>
+            <div class="input-control">
+              <label for="description">Description</label>
+              <textarea
+                id="description"
+                name="description"
+                type="text"
+                rows="5"
+                cols="118"
+              ></textarea>
+              <div class="error"></div>
+            </div>
+          </div>
+          <div class="passDiv">
+            <div class="input-control">
+              <label for="password">Password</label>
+              <input id="password" name="password" type="password" />
+              <i class="fa-solid fa-eye" id="eye"></i>
+              <div class="error"></div>
+            </div>
+
+            <div class="input-control">
+              <label for="password2">Confirm Password</label>
+              <input id="password2" name="password" type="password" />
+              <i class="fa-solid fa-eye" id="eye2"></i>
+              <div class="error"></div>
+            </div>
+          </div>
+
+          <div class="buttonStyle">
+            <div>
+              <button class="buttonOne" type="reset">RESET</button>
+            </div>
+            <div>
+              <button onclick="submitalert" 
+              class="buttonTwo" type="submit">SUBMIT</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
